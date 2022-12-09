@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charge Sheet Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <h3 class="page-header">Charge sheet</h3>
+          </nav>
+        <div class="body-container"> 
+          <div class="card">
+            <div class="card-body">
+              <h5  class="charge-header">Charge units Application</h5>
+              <p  class="charge-header">Note: 1 charge unit charges Rs:10/-</p>
+              <div class = "dropdown_container">
+                <select name = "units" id = "charge_units" class="drop-down">
+                    <option value="1unit">Charge unit 1</option>
+                    <option value="2unit">Charge unit 2</option>
+                    <option value="3unit">Charge unit 3</option>
+                    <option value="4unit">Charge unit 4</option>
+                    <option value="5unit">Charge unit 5</option>
+                    <option value="6unit">Charge unit 6</option>
+                    <option value="7unit">Charge unit 7</option>
+                    <option value="8unit">Charge unit 8</option>
+                    <option value="9unit">Charge unit 9</option>
+                    <option value="10unit">Charge unit 10</option>
+                </select>
+                </div>
+            </div> 
+          </div>
+            <div >
+                <button  class="amount-btn" onclick="amount_handler()">Amount</button>
+            </div>
+            <p id="para" class="charge-header"></p>
+            <div >
+                <button class="amount-btn" onclick="payHandler()" >Proceed To Pay</button>
+            </div>
+        </div>
+        <script src = "script.js" ></script>
+    </body>   
+</html>
